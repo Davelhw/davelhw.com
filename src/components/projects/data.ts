@@ -1,8 +1,8 @@
 import { StaticImageData } from 'next/image'
 
-import geometki from './images/geometki.jpg'
-import meteo from './images/meteostation.jpg'
-import astro from './images/observatory.jpg'
+import blockblast from './images/block-blast.png'
+import peopletap from './images/people-tap-game.png'
+import xpqueue from './images/xp-queue-system.png'
 
 type ProjectType = {
     link: string
@@ -14,7 +14,7 @@ type ProjectType = {
 
 export const data: ProjectType[] = [
     {
-        image: geometki,
+        image: peopletap,
         title: 'People Tap Game',
         link: '',
         description:
@@ -22,7 +22,7 @@ export const data: ProjectType[] = [
         tech: ['NestJS', 'RabbitMQ', 'MySQL', 'TypeORM', 'AWS EC2']
     },
     {
-        image: astro,
+        image: xpqueue,
         title: 'XP Queue System',
         link: '',
         description:
@@ -30,7 +30,7 @@ export const data: ProjectType[] = [
         tech: ['RabbitMQ', 'NestJS', 'Docker', 'MySQL', 'EC2']
     },
     {
-        image: meteo,
+        image: blockblast,
         title: 'Block Blast-Inspired Mobile Game',
         link: '',
         description:
