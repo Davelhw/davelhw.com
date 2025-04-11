@@ -1,0 +1,49 @@
+Folder PATH listing for volume DAVEDATA
+Volume serial number is 0000008A CEA6:3231
+X:\DTECH.GIT\DAVELHW.COM
+|   .gitignore
+|   eslint.config.mjs
+|   files-structure.txt
+|   next-env.d.ts
+|   next.config.ts
+|   package-lock.json
+|   package.json
+|   postcss.config.js
+|   postcss.config.mjs
+|   README.md
+|   tailwind.config.ts
+|   tsconfig.json
+|   
++---public
+|       file.svg
+|       globe.svg
+|       next.svg
+|       vercel.svg
+|       window.svg
+|       
+\---src
+    +---app
+    |   |   favicon.ico
+    |   |   layout.tsx
+    |   |   page.tsx
+    |   |   
+    |   +---about
+    |   |       page.tsx
+    |   |       
+    |   +---contact
+    |   |       page.tsx
+    |   |       
+    |   \---projects
+    |           page.tsx
+    |           
+    +---components
+    |       Footer.tsx
+    |       Hero.tsx
+    |       Navbar.tsx
+    |       ProjectCard.tsx
+    |       
+    +---public
+    |   \---images
+    \---styles
+            globals.css
+            
