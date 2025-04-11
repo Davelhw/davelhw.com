@@ -7,7 +7,7 @@ A modern and flexible portfolio template for React and Next.js developers. Perfe
   <h3>Create Your Personal Developer Portfolio</h3>
   <a href="CHANGELOG.md" target="_blank">Changelog</a>
   ·
-  <a href="https://miksoft.pro" target="_blank">Demo</a>
+  <a href="https://davelhw.com" target="_blank">Demo</a>
   ·
   <a href="https://github.com/miksrv/developer-portfolio-website/issues/new?assignees=miksrv&labels=bug&projects=&template=1-bug.yml&title=%5BBug%5D%3A+">Report Bug</a>
   ·
@@ -201,7 +201,7 @@ We encourage contributions of all kinds, whether big or small. Your efforts help
 
 ### Contact
 
-Misha - [miksoft.pro](https://miksoft.pro)
+Misha - [davelhw.com](https://davelhw.com)
 
 <p align="right">
   (<a href="#top">Back to top</a>)

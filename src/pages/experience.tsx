@@ -16,12 +16,12 @@ const ProjectsPage: React.FC = () => (
                 images: [
                     {
                         height: 1333,
-                        url: 'https://miksoft.pro/avatar.jpeg',
+                        url: 'https://davelhw.com/avatar.jpeg',
                         width: 1000
                     }
                 ],
                 locale: 'en-US',
-                siteName: 'miksoft.pro'
+                siteName: 'davelhw.com'
             }}
         />
 
