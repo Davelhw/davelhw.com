@@ -14,7 +14,7 @@ const GithubActivity = dynamic(() => import('@/src/components/github-activity'),
 const MainPage: React.FC = () => (
     <>
         <NextSeo
-            title={'Hi, Im Misha - Programmer, Engineer and Dreamer'}
+            title={'Hi, Im Davelhw - Programmer, Software Engineer and Golf lover'}
             description={
                 'I am a software engineer specializing in frontend and backend development for scalable web applications. With extensive experience in application development, testing, and managing both development teams and projects, I am focused on delivering high-quality and efficient solutions.'
             }
