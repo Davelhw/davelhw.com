@@ -20,9 +20,9 @@
         "url": "https://github.com/davelhw/davelhw.com/issues"
     },
     "scripts": {
-        "dev": "next dev -p 6000",
+        "dev": "next dev -p 9000",
         "build": "next build",
-        "start": "next start -p 6000",
+        "start": "next start -p 9000",
         "test": "jest",
         "test:coverage": "jest --coverage",
         "eslint:check": "eslint",
