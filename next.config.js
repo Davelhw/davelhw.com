@@ -2,7 +2,7 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const nextConfig = {
-  // Removed 'output: export' to allow next start with PM2
+  output: 'standalone', // ✅ Enables optimized production build
   bundlePagesRouterDependencies: true,
   serverExternalPackages: ['react-activity-calendar', 'react-github-calendar'],
   images: {
