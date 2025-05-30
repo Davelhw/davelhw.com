@@ -52,11 +52,11 @@ const SkillsPage: React.FC = () => (
                 </Link> */}
 
                 <Link
-                    href={'/skills'}
-                    title={'View my technical skills'}
+                    href={'/'}
+                    title={'View about me'}
                 >
-                    {'Skills'}
-                    <Icon name={iconNames.right} />
+                    <Icon name={iconNames.left} />
+                    {'About me'}
                 </Link>
             </section>
         </PageTransition>
