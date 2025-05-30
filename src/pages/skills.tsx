@@ -50,12 +50,19 @@ const SkillsPage: React.FC = () => (
                     <Icon name={iconNames.left} />
                     {'Experience'}
                 </Link> */}
+                <Link
+                    href={'/projects'}
+                    title={'View my pet projects'}
+                >
+                    {'Projects'}
+                    <Icon name={iconNames.left} />
+                </Link>
 
                 <Link
                     href={'/'}
                     title={'View about me'}
                 >
-                    <Icon name={iconNames.left} />
+                    <Icon name={iconNames.right} />
                     {'About me'}
                 </Link>
             </section>
