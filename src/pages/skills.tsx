@@ -54,16 +54,16 @@ const SkillsPage: React.FC = () => (
                     href={'/projects'}
                     title={'View my pet projects'}
                 >
-                    {'Projects'}
                     <Icon name={iconNames.left} />
+                    {'Projects'}
                 </Link>
 
                 <Link
                     href={'/'}
                     title={'View about me'}
                 >
-                    <Icon name={iconNames.right} />
                     {'About me'}
+                    <Icon name={iconNames.right} />
                 </Link>
             </section>
         </PageTransition>
