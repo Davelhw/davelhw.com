@@ -1,6 +1,8 @@
 import { StaticImageData } from 'next/image'
 
 import blockblast from './images/block-blast.png'
+// 👉 Add image later
+import commission from './images/commission-rule-engine.png'
 import peopletap from './images/people-tap-game.png'
 import xpqueue from './images/xp-queue-system.png'
 
@@ -13,6 +15,14 @@ type ProjectType = {
 }
 
 export const data: ProjectType[] = [
+    {
+        image: commission,
+        title: 'Commission Rule Engine (In Development)',
+        link: '',
+        description:
+            'A configurable financial calculation engine modeling hierarchical payouts, rank qualification, and deterministic cut-off processing. Designed with modular rule sequencing, idempotent batch execution, and audit-ready payout generation to simulate production-grade settlement systems.',
+        tech: ['NestJS', 'TypeScript', 'MySQL', 'Batch Processing', 'Docker']
+    },
     {
         image: xpqueue,
         title: 'XP Queue System',
