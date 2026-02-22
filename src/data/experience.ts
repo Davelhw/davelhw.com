@@ -22,11 +22,11 @@ export const experience: ExperienceType[] = [
             {
                 area: 'Frontend',
                 stack: [
-                    Frontend.JavaScript,
-                    Frontend.TypeScript,
-                    Frontend.CSharp,
-                    Frontend.NextJS,
-                    Frontend.VBNet
+                    // Frontend.JavaScript,
+                    // Frontend.TypeScript,
+                    // Frontend.CSharp,
+                    // Frontend.NextJS,
+                    // Frontend.VBNet
                 ]
             },
             {
@@ -42,7 +42,9 @@ export const experience: ExperienceType[] = [
         skills: [
             {
                 area: 'Frontend',
-                stack: [Frontend.JavaScript, Frontend.jQuery, Frontend.TypeScript, Frontend.HTML, Frontend.CSS]
+                stack: [
+                  // Frontend.JavaScript, Frontend.jQuery, Frontend.TypeScript, Frontend.HTML, Frontend.CSS
+                ]
             },
             {
                 area: 'Backend',
@@ -62,11 +64,11 @@ export const experience: ExperienceType[] = [
             {
                 area: 'Frontend',
                 stack: [
-                    Frontend.JavaScript,
-                    Frontend.TypeScript,
+                    // Frontend.JavaScript,
+                    // Frontend.TypeScript,
                     // Frontend.React,
                     // Frontend.Redux,
-                    Frontend.SASS
+                    // Frontend.SASS
                     // Frontend.SemanticUI
                 ]
             },
@@ -88,13 +90,13 @@ export const experience: ExperienceType[] = [
             {
                 area: 'Frontend',
                 stack: [
-                    Frontend.JavaScript,
-                    Frontend.TypeScript,
-                    // Frontend.React,
-                    // Frontend.Redux,
-                    Frontend.CSS,
-                    Frontend.HTML
-                    // Frontend.SemanticUI
+                    // Frontend.JavaScript,
+                    // Frontend.TypeScript,
+                    // // Frontend.React,
+                    // // Frontend.Redux,
+                    // Frontend.CSS,
+                    // Frontend.HTML
+                    // // Frontend.SemanticUI
                 ]
             },
             {
@@ -103,8 +105,8 @@ export const experience: ExperienceType[] = [
                     Backend.RestAPI,
                     // Backend.PHP,
                     Backend.MySQL,
-                    Backend.PostgreSQL,
-                    Backend.Python
+                    Backend.PostgreSQL
+                    // Backend.Python
                     // Backend.CodeIgniter
                 ]
             }
@@ -121,7 +123,9 @@ export const experience: ExperienceType[] = [
         skills: [
             {
                 area: 'Frontend',
-                stack: [Frontend.JavaScript, Frontend.jQuery, Frontend.CSS, Frontend.HTML]
+                stack: [
+                  // Frontend.JavaScript, Frontend.jQuery, Frontend.CSS, Frontend.HTML
+                ]
             },
             {
                 area: 'Backend',
@@ -140,7 +144,9 @@ export const experience: ExperienceType[] = [
         skills: [
             {
                 area: 'Frontend',
-                stack: [Frontend.JavaScript, Frontend.jQuery, Frontend.CSS, Frontend.HTML]
+                stack: [
+                  // Frontend.JavaScript, Frontend.jQuery, Frontend.CSS, Frontend.HTML
+                ]
             },
             {
                 area: 'Backend',
@@ -159,7 +165,9 @@ export const experience: ExperienceType[] = [
         skills: [
             {
                 area: 'Frontend',
-                stack: [Frontend.JavaScript, Frontend.jQuery, Frontend.CSS, Frontend.HTML, Frontend.Bootstrap]
+                stack: [
+                  // Frontend.JavaScript, Frontend.jQuery, Frontend.CSS, Frontend.HTML, Frontend.Bootstrap
+                ]
             },
             {
                 area: 'Backend',
