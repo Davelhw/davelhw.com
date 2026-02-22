@@ -14,27 +14,27 @@ type ProjectType = {
 
 export const data: ProjectType[] = [
     {
-        image: peopletap,
-        title: 'People Tap Game',
-        link: '',
-        description:
-            'A RabbitMQ-powered idle tapping game with real-time XP gain, active/idle income mechanics, player skills, quests, and leaderboard rankings.',
-        tech: ['NestJS', 'RabbitMQ', 'MySQL', 'TypeORM', 'AWS EC2']
-    },
-    {
         image: xpqueue,
         title: 'XP Queue System',
         link: '',
         description:
-            'Scalable XP distribution service handling millions of tap events per day. Features auto-scaling, retry logic, delay queues, sharded consumers, and dead-letter handling.',
+            'An event-driven backend service that processes high-volume activity streams and distributes XP at scale. Designed with idempotent consumers, retry & delay strategies, sharding, and DLQ handling to keep throughput stable under load.',
         tech: ['RabbitMQ', 'NestJS', 'Docker', 'MySQL', 'EC2']
+    },
+    {
+        image: peopletap,
+        title: 'People Tap Game',
+        link: '',
+        description:
+            'A production-grade platform featuring real-time XP gain, active/idle income mechanics, skills, quests, and leaderboards. Built to validate backend patterns like event pipelines, ranking updates, and data consistency under concurrent writes.',
+        tech: ['NestJS', 'RabbitMQ', 'MySQL', 'TypeORM', 'AWS EC2']
     },
     {
         image: blockblast,
         title: 'Block Blast-Inspired Mobile Game',
         link: '',
         description:
-            'A block puzzle game in development — will feature regional/world rankings, diamond economy, power-ups, and video-reward monetization. Built with React Native and Unity (experimental).',
+            'A mobile game prototype exploring rankings, virtual economy, and reward loops. Used as a sandbox for system design experiments around leaderboards, event tracking, and scalable backend integration.',
         tech: ['React Native', 'Unity', 'TypeScript', 'Firebase']
     }
 ]

@@ -25,12 +25,22 @@
     .skillList
         li
             display: flex
+            align-items: center
             justify-content: space-between
-            margin-bottom: 5px
+            gap: 12px
+            margin-bottom: 8px
 
             .label
                 display: flex
                 justify-content: flex-start
                 align-items: center
                 color: var(--text-color-secondary)
-                width: 200px
+                width: 180px
+                flex: 0 0 180px
+
+                @media screen and (max-width: variables.$mobileMaxWidth)
+                    width: 140px
+                    flex: 0 0 140px
+
+            label
+                line-height: 1.2

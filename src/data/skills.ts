@@ -1,61 +1,37 @@
-export const Frontend = {
-    TypeScript: 'TypeScript',
-    JavaScript: 'JavaScript',
-    CSharp: 'C#',
-    VBNet: 'VB.Net',
-    NextJS: 'Next.js',
-    jQuery: 'jQuery',
-    HTML: 'HTML',
-    CSS: 'CSS',
-    SASS: 'SASS',
-    Bootstrap: 'Bootstrap',
-    TailwindCSS: 'Tailwind CSS'
-} as const
-
-export type FrontendSkillsType = (typeof Frontend)[keyof typeof Frontend]
-
 export const Backend = {
-    Python: 'Python',
-    NodeJS: 'NodeJS',
+    TypeScript: 'TypeScript',
+    NodeJS: 'Node.js',
+    NestJS: 'NestJS',
+    RestAPI: 'REST API',
     MySQL: 'MySQL',
     PostgreSQL: 'PostgreSQL',
-    RestAPI: 'REST API',
-    NestJS: 'NestJS',
     RabbitMQ: 'RabbitMQ',
     Redis: 'Redis',
-    MongoDB: 'MongoDB',
-    TypeORM: 'TypeORM',
-    Prisma: 'Prisma'
+    Prisma: 'Prisma',
+    DotNet: 'C# / .NET'
 } as const
 
 export type BackendSkillsType = (typeof Backend)[keyof typeof Backend]
 
 export const DevOps = {
-    Git: 'Git',
+    AWS: 'AWS',
     Docker: 'Docker',
+    GitHubActions: 'GitHub Actions',
     Linux: 'Linux',
-    CentsOS: 'CentOS',
-    Ubuntu: 'Ubuntu',
-    GitHubActions: 'GitHub Actions'
+    Git: 'Git'
 } as const
 
-// export type DevOpsSkillsType = (typeof DevOps)[keyof typeof DevOps]
+export type DevOpsSkillsType = (typeof DevOps)[keyof typeof DevOps]
 
-// export const Testing = {
-//     Playwright: 'Playwright',
-//     RTL: 'React Testing Library',
-//     Jest: 'Jest'
-// } as const
+export const Frontend = {
+    React: 'React',
+    NextJS: 'Next.js',
+    VueJS: 'Vue.js'
+} as const
 
-// export type TestingSkillsType = (typeof Testing)[keyof typeof Testing]
+export type FrontendSkillsType = (typeof Frontend)[keyof typeof Frontend]
 
-// export const CMS = {
-//     WordPress: 'WordPress',
-//     Drupal: 'Drupal',
-//     Joomla: 'Joomla'
-// } as const
-
-// export type CMSSkillsType = (typeof CMS)[keyof typeof CMS]
-
-// export type SkillsType = FrontendSkillsType | BackendSkillsType | DevOpsSkillsType | TestingSkillsType | CMSSkillsType
-export type SkillsType = FrontendSkillsType | BackendSkillsType
+export type SkillsType =
+    | BackendSkillsType
+    | DevOpsSkillsType
+    | FrontendSkillsType

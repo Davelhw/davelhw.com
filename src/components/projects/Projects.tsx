@@ -1,3 +1,4 @@
+// Projects.tsx
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -32,22 +33,30 @@ const Projects: React.FC = () => (
                     </Link>
 
                     <div className={styles.description}>
-                        <div>
-                            <h2>{item.title}</h2>
-                            {item?.description && <p>{item.description}</p>}
-                        </div>
+                      <div>
+                          <h2>{item.title}</h2>
+                          {item?.description && <p>{item.description}</p>}
 
-                        <div className={styles.info}>
-                            <Icon name={iconNames.web} />
-                            <Link
-                                href={item.link}
-                                title={item.title}
-                                target={'_blank'}
-                            >
-                                {item.link.replace(/^https?:\/\//, '').replace(/\/$/, '')}
-                            </Link>
-                        </div>
-                    </div>
+                          <div className={styles.techList}>
+                              {item.tech.map((techItem) => (
+                                  <span key={`${item.title}-${techItem}`} 
+                                  className={styles.techChip}>
+                                      {techItem}
+                                  </span>
+                              ))}
+                          </div>
+                      </div>
+
+                      <div className={styles.info}>
+                          <Icon name={iconNames.web} />
+                          <Link href={item.link}
+                              title={item.title}
+                              target={'_blank'}>
+                              {item.link.replace(/^https?:\/\//, '').replace(/\/$/, '')}
+                          </Link>
+                      </div>
+                  </div>
+
                 </div>
             ))}
         </PageTransition>

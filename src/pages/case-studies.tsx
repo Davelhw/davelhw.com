@@ -5,14 +5,13 @@ import { NextSeo } from 'next-seo'
 import Icon from '@/src/components/icon'
 import { iconNames } from '@/src/components/icon/types'
 import PageTransition from '@/src/components/page-transition'
-import Skills from '@/src/components/skills'
-import SkillsCloud from '@/src/components/skills-cloud'
+import Projects from '@/src/components/projects'
 
-const SkillsPage: React.FC = () => {
-    const pageTitle = 'Technical skills'
+const ProjectsPage: React.FC = () => {
+    const pageTitle = 'Engineering Case Studies | Dave Lim'
     const pageDescription =
-          'I specialize in backend architecture within TypeScript/Node.js ecosystems — focusing on API design, database modeling, event-driven systems, and disciplined production engineering. While I collaborate across the stack, my core strength lies in building and leading scalable backend services for enterprise and regulated environments.'
-    
+    'Backend architecture and distributed system case studies demonstrating scalable TypeScript/Node.js design, event-driven processing, and production-grade engineering discipline.'
+
     return (
         <>
             <NextSeo
@@ -26,8 +25,7 @@ const SkillsPage: React.FC = () => {
                             width: 1000
                         }
                     ],
-                    locale: 'en-US',
-                    siteName: 'davelhw.com'
+                    locale: 'en-US'
                 }}
             />
 
@@ -36,21 +34,21 @@ const SkillsPage: React.FC = () => {
                     <h1 className={'pageTitle'}>{pageTitle}</h1>
                     <p>{pageDescription}</p>
                 </section>
+            </PageTransition>
 
-                <Skills />
+            <Projects />
 
-                <SkillsCloud />
-
+            <PageTransition>
                 <section className={'footerLinks'}>
-                    <Link href={'/case-studies'}
-                        title={'View my case studies'}>
-                        <Icon name={iconNames.left} />
-                        {'Case Studies'}
-                    </Link>
-
                     <Link href={'/'}
                         title={'View about me'}>
+                        <Icon name={iconNames.left} />
                         {'About me'}
+                    </Link>
+
+                    <Link href={'/skills'}
+                        title={'View my technical skills'}>
+                        {'Skills'}
                         <Icon name={iconNames.right} />
                     </Link>
                 </section>
@@ -59,4 +57,4 @@ const SkillsPage: React.FC = () => {
     )
 }
 
-export default SkillsPage
+export default ProjectsPage

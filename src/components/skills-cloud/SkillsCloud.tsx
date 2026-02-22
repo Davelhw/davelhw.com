@@ -8,9 +8,9 @@ const SkillsCloud: React.FC = () => (
     <section>
         <ul className={styles.tagsCloud}>
             {[
-                ...Object.values(Frontend),
                 ...Object.values(Backend),
-                ...Object.values(DevOps)
+                ...Object.values(DevOps),
+                ...Object.values(Frontend)
             ].map((item, i) => (
                 <li key={`cloud-item-${i}`}>{item}</li>
             ))}

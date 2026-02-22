@@ -33,7 +33,6 @@ const findEarliestDate = (experience: ExperienceType[]): string | undefined => {
     }
 
     const earliestDate = new Date(Math.min(...allDates.map((date) => date.getTime())))
-
     return earliestDate.toISOString().split('T')[0]
 }
 
@@ -42,7 +41,6 @@ const birthTime = new Date('1977-06-16T00:00:00').getTime()
 const expTime = new Date(findEarliestDate(experience) ?? '1999-10-08T09:00:00').getTime()
 
 export const Introduce: React.FC = () => {
-    const [myAge, setMyAge] = React.useState<string>('')
     const [myExp, setMyExp] = React.useState<string>('')
 
     const dateUpdate = new Date(update).toLocaleDateString('en-us', {
@@ -53,18 +51,11 @@ export const Introduce: React.FC = () => {
     })
 
     const tick = () => {
-        const ageCalc = ((Date.now() - birthTime) / divisor).toFixed(9)
         const expCalc = ((Date.now() - expTime) / divisor).toFixed(9)
-
-        setMyAge(ageCalc)
         setMyExp(expCalc)
     }
 
     const factsList: FactType[] = [
-        // {
-        //     title: 'My age',
-        //     value: myAge
-        // },
         {
             title: 'Experience',
             value: myExp
@@ -89,30 +80,28 @@ export const Introduce: React.FC = () => {
             icon: 'telegram',
             label: 'Telegram',
             link: 'https://t.me/dddddd999996'
+        },
+        {
+            icon: 'linkedin',
+            label: 'LinkedIn',
+            link: 'https://www.linkedin.com/in/davelhw/'
         }
-        // {
-        //     icon: 'linkedin',
-        //     label: 'LinkedIn',
-        //     link: 'https://www.linkedin.com/in/mikcatsvill/'
-        // }
     ]
 
     React.useEffect(() => {
         const timer = setInterval(() => tick(), 500)
-
         return () => clearInterval(timer)
     }, [])
 
     return (
         <section className={styles.introduceSection}>
             <div className={styles.avatarContainer}>
-                <Image
-                    src={avatarPic}
-                    layout={'fill'}
-                    objectFit={'cover'}
-                    alt={'Hi I\'m - Dave Lim'}
-                />
+                <Image src={avatarPic}
+layout={'fill'}
+objectFit={'cover'}
+alt={'Hi I\'m - Dave Lim'} />
             </div>
+
             <div className={styles.infoContainer}>
                 <div className={styles.header}>
                     <div className={styles.title}>
@@ -135,7 +124,12 @@ export const Introduce: React.FC = () => {
                             ))}
                         </div>
                     </div>
-                    <h3 className={styles.subTitle}>{'Software Engineer, Golfer'}</h3>
+
+                    <h4 className={styles.subTitle}>
+                        <span>{'TypeScript Backend Architect & Technical Lead'}</span>
+                        <br />
+                        <span>{'Fintech Systems | Scalable Infrastructure | Regulated Environments'}</span>
+                    </h4>
                 </div>
 
                 <ul className={styles.factsList}>
@@ -149,12 +143,26 @@ export const Introduce: React.FC = () => {
 
                 <div className={styles.description}>
                     <p>
-                        {'I’m an old beginner in software development, '} <b>{'Fullstack Software Engineer'}</b>{' '}
-                        {'specializing in scalable web applications, working across both'} <b>{'frontend'}</b> and{' '}
-                        <b>{'backend'}</b>{' '}
-                        {
-                            'development. With a focus on delivering efficient and high-quality solutions, I manage and develop projects for clients in various industries.'
-                        }
+                        {'I design and lead the delivery of secure, scalable backend systems using '}
+                        <b>{'TypeScript'}</b>
+                        {', '}
+                        <b>{'Node.js'}</b>
+                        {', and '}
+                        <b>{'relational databases'}</b>
+                        {'. My foundation was shaped in regulated and enterprise environments, where '}
+                        {'auditability, data integrity, and disciplined delivery are non-negotiable.'}
+                    </p>
+
+                    <p>
+                        {'I work hands-on with architecture and code — from '}
+                        <b>{'API design'}</b>
+                        {', '}
+                        <b>{'database modeling'}</b>
+                        {', and '}
+                        <b>{'event-driven workflows'}</b>
+                        {' to '}
+                        <b>{'CI/CD'}</b>
+                        {' and production operations — while guiding teams through clear technical direction and reviews.'}
                     </p>
                 </div>
             </div>

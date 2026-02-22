@@ -9,7 +9,7 @@ export const menu: MenuItemType[] = [
         url: '/'
     },
     {
-        label: 'Projects',
+        label: 'Case Studies',
         url: '/projects'
     },
     // {
