@@ -18,7 +18,7 @@ export const data: ProjectType[] = [
     {
         image: commission,
         title: 'Commission Rule Engine (In Development)',
-        link: '',
+        link: 'https://github.com/Davelhw/Ant-Colony-Commission-Engine',
         description:
             'A configurable financial calculation engine modeling hierarchical payouts, rank qualification, and deterministic cut-off processing. Designed with modular rule sequencing, idempotent batch execution, and audit-ready payout generation to simulate production-grade settlement systems.',
         tech: ['NestJS', 'TypeScript', 'MySQL', 'Batch Processing', 'Docker']
