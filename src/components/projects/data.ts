@@ -19,7 +19,7 @@ export const data: ProjectType[] = [
     {
         image: securegpt,
         title: 'Secure GPT Gateway (AI Governance Control Plane)',
-        link: '', // add GitHub link when ready
+        link: 'https://github.com/Davelhw/secure-gpt-gateway',
         description:
             'An enterprise-grade LLM mediation layer designed to enforce policy, audit AI interactions, and provide deterministic control over external language model usage. Implements versioned rule bundles, transactional activation, idempotent request handling, structured audit logging, and provider-agnostic LLM abstraction to simulate production-grade AI governance in regulated environments.',
         tech: ['NestJS', 'TypeScript', 'PostgreSQL', 'Prisma', 'RBAC', 'Docker']
