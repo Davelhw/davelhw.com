@@ -4,6 +4,7 @@ import blockblast from './images/block-blast.png'
 // 👉 Add image later
 import commission from './images/commission-rule-engine.png'
 import peopletap from './images/people-tap-game.png'
+import securegpt from './images/secure-gpt-gateway.png'
 import xpqueue from './images/xp-queue-system.png'
 
 type ProjectType = {
@@ -15,6 +16,14 @@ type ProjectType = {
 }
 
 export const data: ProjectType[] = [
+    {
+        image: securegpt,
+        title: 'Secure GPT Gateway (AI Governance Control Plane)',
+        link: '', // add GitHub link when ready
+        description:
+            'An enterprise-grade LLM mediation layer designed to enforce policy, audit AI interactions, and provide deterministic control over external language model usage. Implements versioned rule bundles, transactional activation, idempotent request handling, structured audit logging, and provider-agnostic LLM abstraction to simulate production-grade AI governance in regulated environments.',
+        tech: ['NestJS', 'TypeScript', 'PostgreSQL', 'Prisma', 'RBAC', 'Docker']
+    },
     {
         image: commission,
         title: 'Commission Rule Engine (In Development)',
@@ -28,7 +37,7 @@ export const data: ProjectType[] = [
         title: 'XP Queue System',
         link: '',
         description:
-            'An event-driven backend service that processes high-volume activity streams and distributes XP at scale. Designed with idempotent consumers, retry & delay strategies, sharding, and DLQ handling to keep throughput stable under load.',
+            'An event-driven backend service engineered to process high-volume activity streams and distribute XP deterministically at scale. Implements idempotent consumers, delayed retries, sharding strategies, and Dead Letter Queue (DLQ) handling to maintain throughput stability under burst traffic. Designed with message durability, back-pressure awareness, and failure isolation to simulate production-grade distributed processing patterns.',
         tech: ['RabbitMQ', 'NestJS', 'Docker', 'MySQL', 'EC2']
     },
     {
@@ -36,7 +45,7 @@ export const data: ProjectType[] = [
         title: 'People Tap Game',
         link: '',
         description:
-            'A production-grade platform featuring real-time XP gain, active/idle income mechanics, skills, quests, and leaderboards. Built to validate backend patterns like event pipelines, ranking updates, and data consistency under concurrent writes.',
+            'A production-grade backend platform featuring real-time XP accrual, active/idle income mechanics, skill trees, quest systems, and competitive leaderboards. Designed to validate event-driven pipelines, ranking recalculation strategies, and data consistency under concurrent writes. Emphasizes deterministic state transitions, eventual consistency trade-offs, and scalable progression modeling for high-engagement systems.',
         tech: ['NestJS', 'RabbitMQ', 'MySQL', 'TypeORM', 'AWS EC2']
     },
     {
